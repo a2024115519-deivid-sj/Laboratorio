@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main {
+
+    //Declaración de variables
+    double distancia;
+    double rendimiento;
+    double Litros;
+    double PrecioLitro;
+    double CostoTotal;
+
+
+    //Proceso
+    cout<<"Ingrese la distancia del viaje en Km:";
+    cin>> distancia;
+    cout<<"Ingrese el valor del rendimiento en Ltrs/Km:";
+    cin>> rendimiento;
+
+    Litros = distancia*rendimiento;
+    CostoTotal = PrecioLitro*Litros;
+
+    //Salida
+
+    cout<<"Los litros necesarios son: " << Litros << endl;
+    cout<<"El costo total fue: Bs" <<CostoTotal << endl;
+
+return 0;
+}
