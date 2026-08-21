@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main {
+int main() {
 
     //Declaración de variables
     double distancia;
@@ -16,8 +16,10 @@ int main {
     cin>> distancia;
     cout<<"Ingrese el valor del rendimiento en Ltrs/Km:";
     cin>> rendimiento;
+    cout<<"Ingrese el precio del litro: Bs";
+    cin>> PrecioLitro;
 
-    Litros = distancia*rendimiento;
+    Litros = distancia/rendimiento;
     CostoTotal = PrecioLitro*Litros;
 
     //Salida
