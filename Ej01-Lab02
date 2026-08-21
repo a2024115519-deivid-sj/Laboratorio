@@ -1,0 +1,15 @@
+Algoritmo ÁreadeRectángulo
+	Definir base Como Real
+	Definir altura Como Real
+	
+	Escribir "Escriba el valor de la base:"
+	Leer base
+	Escribir "Escriba el valor de la altura:"
+	Leer altura
+	
+	Área <- base*altura
+	
+	Escribir "La base es: " base " m"
+	Escribir "La altura es: " altura " m"
+	Escribir "El área del rectángulo es: " Área " m2"	
+FinAlgoritmo
