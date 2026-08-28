@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+
+    string Nombre,Carrera;
+    int Edad,Semestre;
+
+        cout << "Le solicitamos que ingrese sus datos como estudiante universitario" << endl;
+        cout << "¿Cuál es su nombre? ";
+        cin >> Nombre;
+
+        cout << "¿Cuál es su edad? ";
+        cin >> Edad;
+
+        cout << "¿Cuál es su carrera? ";
+        cin >> Carrera;
+
+        cout << "¿En qué semestre se encuentra? " <<endl;
+        cin >> Semestre;
+
+        cout << "Los datos del estudiantes son los siguientes: " << endl << endl;
+        cout << "Nombre: " << Nombre << endl;
+        cout << "Edad: " << Edad << endl;
+        cout << "Carrera: " << Carrera << endl;
+        cout << "Semestre: " << Semestre;
+
+
+return 0;
+
+}
