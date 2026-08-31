@@ -1,0 +1,41 @@
+Algoritmo Registro_Verificación_Edad
+	Definir N Como Caracter
+	Definir C Como Caracter
+	Definir E Como Entero
+	Definir S Como Entero
+	
+	Escribir "Ingrese los datos del estudiante: "
+	Escribir "Nombre: "
+	Leer N
+	
+	Escribir "Edad: "
+	Leer E
+	
+	Escribir "Carrera: "
+	Leer C
+	
+	Escribir "Semestre: "
+	Leer S
+	
+	Escribir ""
+	Escribir "Aclaración:"
+	
+	Si (E >= 18) Entonces
+		Escribir "El estudiante es mayor de edad"
+	SiNo 
+		Escribir "El estudiante es menor de edad"	
+	FinSi
+	
+	Escribir ""
+	
+	
+	Escribir "Información del estudiante"
+	Escribir "Nombre:" N	
+	Escribir "Edad:" E
+	Escribir "Carrera:" C
+	Escribir "Semestre: " S
+	
+	
+	
+	
+FinAlgoritmo
