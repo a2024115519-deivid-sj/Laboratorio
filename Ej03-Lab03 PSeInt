@@ -1,0 +1,70 @@
+Algoritmo Registro_Verificación_Aprobación
+	Definir N Como Caracter
+	Definir C Como Caracter
+	Definir E Como Entero
+	Definir S Como Entero
+	Definir parcial1 Como Entero
+	Definir parcial2 Como Entero
+	Definir parcial3 Como Entero
+	Definir promedio Como Real
+	
+	
+	Escribir "Ingrese los datos del estudiante: "
+	Escribir "Nombre: "
+	Leer N
+	
+	Escribir "Edad: "
+	Leer E
+	
+	Escribir "Carrera: "
+	Leer C
+	
+	Escribir "Semestre: "
+	Leer S
+	
+	Escribir ""
+	Escribir "Aclaración:"
+	
+	Si (E >= 18) Entonces
+		Escribir "El estudiante es mayor de edad"
+	SiNo 
+		Escribir "El estudiante es menor de edad"	
+	FinSi
+	
+	Escribir ""
+	
+	Escribir "Notas del Parcial"
+	Escribir "1er Parcial: "
+	Leer parcial1
+	
+	Escribir "2do Parcial: "
+	Leer parcial2
+	
+	Escribir "3er Parcial: "
+	Leer parcial3
+	
+	promedio <- (parcial1 + parcial2 + parcial3)/3
+	promedio <- TRUNC(((parcial1 + parcial2 + parcial3)/3)*100)/100
+	
+	
+	Escribir ""
+	
+	Si (promedio >= 51) Entonces
+		Escribir "Resultado: APROBADO"
+	SiNo
+		Escribir "Resultado: REPROBADO"
+	FinSi
+	
+	Escribir ""
+	
+	Escribir "Información del estudiante"
+	Escribir "Nombre:" N	
+	Escribir "Edad:" E
+	Escribir "Carrera:" C
+	Escribir "Semestre: " S
+	Escribir "Promedio final:" promedio
+	
+	
+	
+	
+FinAlgoritmo
