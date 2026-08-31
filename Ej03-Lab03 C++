@@ -1,0 +1,64 @@
+#include <iostream> 
+#include <iomanip>
+using namespace std;
+
+int main(){
+    string N,C;
+    int E,S;
+    double parcial1,parcial2,parcial3;
+    double promedio;
+    
+    cout<<"Coloque sus datos de estudiante universitario: " <<endl;
+    cout<<"Ingrese su nombre: ";
+    cin>>N;
+    
+    cout<<"Ingrese su edad: ";
+    cin>>E;
+    
+    cin.ignore();
+    
+    cout<<"Ingrese su carrera: ";
+    getline(cin,C);
+    
+    cout<<"¿En qué semestre se encuentra? ";
+    cin>>S;
+    
+    cout << endl;
+        
+        if (E>=18) {
+             cout<<"El estudiante es mayor de edad" <<endl << endl;
+        } else {
+              cout<<"El estudiante es menor de edad" << endl << endl;
+        }    
+    
+    cout<<"Notas del Parcial" << endl;
+    cout<<"1er Parcial: ";
+    cin>>parcial1;
+    
+    cout<<"2do Parcial: ";
+    cin>>parcial2;
+    
+    cout<<"3er Parcial: ";
+    cin>>parcial3;
+    
+    promedio = (parcial1+parcial2+parcial3)/3;
+    cout << fixed << setprecision(2);
+    
+        if (promedio>=51){
+            cout<<"Resultado: APROBADO" << endl << endl;
+        }    else {
+                cout<<"Resultado: REPROBADO" << endl << endl;
+        }
+    
+    cout<<"Información del estudiante" << endl;
+    cout<<"Nombre: " << N << endl;
+    cout<<"Edad: " << E << endl;
+    cout<<"Carrera: " << C << endl;
+    cout<<"Semestre: " << S << endl;
+    cout<<"Promedio Final: " << promedio;
+    
+    
+    
+    
+    return 0;
+}
