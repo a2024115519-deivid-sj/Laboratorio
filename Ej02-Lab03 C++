@@ -1,0 +1,39 @@
+#include <iostream> 
+using namespace std;
+
+int main(){
+    string N,C;
+    int E,S;
+    
+    cout<<"Coloque sus datos de estudiante universitario: " <<endl;
+    cout<<"Ingrese su nombre: ";
+    cin>>N;
+    
+    cout<<"Ingrese su edad: ";
+    cin>>E;
+    
+    cin.ignore();
+    
+    cout<<"Ingrese su carrera: ";
+    getline(cin,C);
+    
+    cout<<"¿En qué semestre se encuentra? ";
+    cin>>S;
+    
+    cout << endl;
+        
+        if (E>=18) {
+             cout<<"El estudiante es mayor de edad";
+        } else {
+              cout<<"El estudiante es menor de edad" << endl << endl;
+        }    
+    
+    cout<<"Información del estudiante" << endl;
+    cout<<"Nombre: " << N << endl;
+    cout<<"Edad: " << E << endl;
+    cout<<"Carrera: " << C << endl;
+    cout<<"Semestre: " << S;
+
+
+    return 0;
+}
