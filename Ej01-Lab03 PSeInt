@@ -1,0 +1,30 @@
+Algoritmo RegistroBásico
+	
+	//ENTRADA
+	Definir N Como caracter	
+	Definir C Como caracter
+	Definir E Como Entero
+	Definir S Como Entero
+	
+	//PROCESO
+	Escribir "Ingrese sus datos de estudiantes universitario"
+	Escribir "Nombre del estudiante: "
+	Leer N
+	
+	Escribir "Edad: "
+	Leer E
+	
+	Escribir "Carrera: "
+	Leer C
+	
+	Escribir "Semestre: "
+	Leer S
+	
+	//SALIDA
+	Escribir "Nombre del estudiante: " N
+	Escribir "Edad: " E
+	Escribir "Carrera: " C
+	Escribir "Semestre: " S
+	
+	
+FinAlgoritmo
