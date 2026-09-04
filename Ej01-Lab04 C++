@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    string nombre,M,D,C,AI;
+    float GastoTotal,GastoFijo,tarifa,m3;
+    
+    cout<<"Calcule la tarifa de agua potable por categoría" <<endl;
+    cout<<"Escriba su nombre: "
+    cin>>nombre;
+    
+    cout<<endl;
+    
+    cout<<"Su consumo de agua (m3) fue: ";
+    cin>>m3;
+    if (m3>0 && m3<=15){
+        else (GastoTotal=1.20*m3+10);
+    }
+    
+    if (m3>15 && m3<=35){
+        else (GastoTotal=2.50*m3+10);
+        
+    if(m3>35 && m3<=70){
+        else (GastoTotal=4.00*m3+10);
+    }
+    
+    if (m3>70){
+        else (GastoTotal=6.50*m3+10);
+    }
+    
+    GastoFijo=10;
+    GastoTotal=tarifa*m3;
+    
+    
+    //Salida
+    
+    cout<<"Información" <<endl;
+    cout<<"Nombre del cliente: " << nombre << endl;
+    cout<<"Monto fijo a pagar: Bs " << GastoFijo << endl;
+    cout<<"El pago total es: Bs " << GastoTotal << endl;
+    cout<<"Categoría asignada: " << 
+    
+    
+    
+    return 0;
+}
+
+LA CATEGORIA consumo minimo es igual cuando el m3 esta entre 0 y 15... cómo pondría eso? se podria else ( ... && ...) o algo así
+Verlo en casa
+}
