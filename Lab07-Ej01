@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+void leerVentas(v);
+double procesarVentas();
+
+int main()
+{
+    double ventas,n = 0;
+    
+    
+   
+    
+    
+    
+    
+    
+
+
+    return 0;
+}
+
+void leerVentas(v){
+    double contador = 0, n = 0;
+    
+    for (int i=1; i<=n ; i=i+1 ) {
+    cout << "Ingrese las ventas de los cinco días pasados: ";
+    cin >> ventas;
+    
+    contador = ventas + 0 ;//quiero tener las ventas de cada uno guardada para que asi sepa de las que puso cuantas superan al promedio
+    contador = ventas;
+    n = n + 1;  //n = cantidad de veces que escribió = 5 dias para que use el promedio dividiendo entre esa cantidad
+}
+
+double procesarVentas(){
+    double Total,Promedio,Cantidadsupera;
+    
+    Total = contador;
+    Promedio = contador/n;
+    
+    
+}
