@@ -1,42 +1,90 @@
+/*
+Preguntas de análisis
+•	¿Qué datos necesita recibir procesarVentas()?
+•	¿Por qué se requiere conocer el promedio antes de contar los días que lo superan?
+•	¿Qué parámetros deben enviarse a mostrarResultados()?
+
+- La suma de las ventas de cada dia, en este caso de 5, TotalVentas,Promediodiario,Cantidad días que superaron al promedio
+- Porque sino no sabriamos cuánto días lo superaron (promedio) si no tenemos ese dato
+- Total,Promedio, diasuperiorpromedio
+*/
+
+
 #include <iostream>
 using namespace std;
 
-void leerVentas(v);
-double procesarVentas();
+void leerVentas(double &v1, double &v2, double &v3, double &v4, double &v5);
+void procesarVentas(double v1, double v2, double v3, double v4, double v5, double &Total, double &Promedio, int &n);
+void mostrarResultados(double Total, double Promedio, int n);
 
 int main()
 {
-    double ventas,n = 0;
+    double v1, v2, v3, v4, v5, Total, Promedio;
+    int n;
     
+    leerVentas(v1, v2, v3, v4, v5);
     
-   
+    procesarVentas(v1, v2, v3, v4, v5, Total, Promedio, n);    
     
-    
-    
-    
-    
-
+    mostrarResultados(Total, Promedio, n);
 
     return 0;
 }
 
-void leerVentas(v){
-    double contador = 0, n = 0;
+
+void leerVentas(double &v1, double &v2, double &v3, double &v4, double &v5) {
+   
+    cout << "Registre las ventas de los días siguientes: " << endl;
+    cout << "Día 1: ";
+    cin >> v1;
     
-    for (int i=1; i<=n ; i=i+1 ) {
-    cout << "Ingrese las ventas de los cinco días pasados: ";
-    cin >> ventas;
+    cout << "Día 2: ";
+    cin >> v2;
     
-    contador = ventas + 0 ;//quiero tener las ventas de cada uno guardada para que asi sepa de las que puso cuantas superan al promedio
-    contador = ventas;
-    n = n + 1;  //n = cantidad de veces que escribió = 5 dias para que use el promedio dividiendo entre esa cantidad
+    cout << "Día 3: ";
+    cin >> v3;
+    
+    cout << "Día 4: ";
+    cin >> v4;
+    
+    cout << "Día 5: ";
+    cin >> v5;
+    
 }
 
-double procesarVentas(){
-    double Total,Promedio,Cantidadsupera;
+void procesarVentas(double v1, double v2, double v3, double v4, double v5, double &Total, double &Promedio, int &n) {
     
-    Total = contador;
-    Promedio = contador/n;
+    Total = v1+v2+v3+v4+v5;
+    Promedio = Total/5.0;
+    n = 0;
     
+    if (v1 > Promedio) {
+        n = n + 1;
+    }
+    
+    if (v2 > Promedio) {
+        n = n + 1;
+    }
+    
+    if (v3 > Promedio) {
+        n = n + 1;
+    }
+    
+    if (v4 > Promedio) {
+        n = n + 1;
+    }
+    
+    if (v5 > Promedio) {
+        n = n + 1;
+    }
+    
+}
+
+void mostrarResultados(double Total, double Promedio, int n) {
+    
+    cout << "Informe - Análisis de Ventas" << endl << endl;
+    cout << "Total Ventas: " << Total << endl;
+    cout << "Promedio: " << Promedio << endl;
+    cout << "Ventas que superaron al promedio: " << n ;
     
 }
